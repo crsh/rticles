@@ -17,9 +17,10 @@
 #' }
 #'
 #' @export
-rsos_article <- function(...,
-                             keep_tex = TRUE) {
-  inherit_pdf_document(...,
-                       template = find_resource("rsos_article", "rsos_template.tex"),
-                       keep_tex = keep_tex)
+rsos_article <- function(..., keep_tex = TRUE) {
+  inherit_pdf_document(
+    ...
+    , template = find_resource("rsos_article", "rsos_template.tex")
+    , keep_tex = keep_tex
+  )
 }
